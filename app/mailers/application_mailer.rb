@@ -1,5 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'hello@bestbail.com'
+  default from: 'Best Bail <hello@bestbail.com>'
   layout 'mailer'
 
   def new_bail(bail)
