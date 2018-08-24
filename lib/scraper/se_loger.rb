@@ -8,7 +8,7 @@ module Scraper
     BAIL_URL_SELECTOR = '.c-pa-link'
 
     def initialize()
-      @url = "https://www.seloger.com/list.htm?types=1%2C9&projects=1&lift=1&furnished=0&price=NaN%2F1600&surface=45%2FNaN&rooms=2&places=%5B%7Bci%3A750108%7D%7C%7Bci%3A750109%7D%7C%7Bci%3A750110%7D%7C%7Bci%3A750111%7D%7C%7Bci%3A750102%7D%7C%7Bci%3A750103%7D%7C%7Bci%3A750104%7D%5D&qsVersion=1.0"
+      @url = "https://www.seloger.com/list.htm?types=1%2C9&projects=1&furnished=0&price=NaN%2F1600&surface=45%2FNaN&rooms=2&places=%5B%7Bci%3A750108%7D%7C%7Bci%3A750109%7D%7C%7Bci%3A750110%7D%7C%7Bci%3A750111%7D%7C%7Bci%3A750102%7D%7C%7Bci%3A750103%7D%7C%7Bci%3A750104%7D%5D&qsVersion=1.0"
     end
 
     # Returns the bails on page 1
