@@ -16,7 +16,7 @@ namespace :scheduler do
       end
     end
 
-    Pap.new(ENV['LEBONCOIN_URL']).list_bail_urls.each do |url|
+    Pap.new(ENV['PAP_URL']).list_bail_urls.each do |url|
       bail = Bail.new(url: url)
       if bail.save
         p "New bail on Leboncoin.fr: #{bail.url}"

@@ -13,7 +13,6 @@ class Scraper
     browser = Capybara::Session.new(:chrome)
     browser.visit @url
     links = browser.all ad_selector
-
     @results = links.map do |link|
       link["href"] =~ URL_REGEX
       $1
