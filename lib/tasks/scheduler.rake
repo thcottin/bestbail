@@ -12,15 +12,15 @@ namespace :scheduler do
       bail = Bail.new(url: url)
       if bail.save
         p "New bail on Leboncoin.fr: #{bail.url}"
-        # ApplicationMailer.new_bail(bail).deliver_now!
+        ApplicationMailer.new_bail(bail).deliver_now!
       end
     end
 
     Pap.new(ENV['PAP_URL']).list_bail_urls.each do |url|
       bail = Bail.new(url: url)
       if bail.save
-        p "New bail on Leboncoin.fr: #{bail.url}"
-        # ApplicationMailer.new_bail(bail).deliver_now!
+        p "New bail on Pap.fr: #{bail.url}"
+        ApplicationMailer.new_bail(bail).deliver_now!
       end
     end
   end
