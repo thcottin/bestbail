@@ -4,7 +4,8 @@ class ApplicationMailer < ActionMailer::Base
 
   def new_bail(bail)
     @bail = bail
+    @email = ENV['NOTIFICATION_EMAIL']
 
-    mail to: "th.cottin76@gmail.com, m.racine.pro@gmail.com", subject: "Nouveau bail - #{@bail.title}"
+    mail to: @email, subject: "#{@bail.title}"
   end
 end
